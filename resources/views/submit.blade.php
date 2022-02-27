@@ -43,6 +43,7 @@
                                 <td><img class="img-fluid" src="{{ asset('storage/'.$data->Photo) }}"></td>
                             </tr>
                         </table>
+                        <a href="/formulir" class="btn btn-primary mt-3">Back</a>
                     </div>
                 </div>
             </div>
