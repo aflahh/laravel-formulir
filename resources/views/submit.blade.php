@@ -16,8 +16,13 @@
             <div class="col-6">
                 <div class="card mt-5">
                     <div class="card-body">
-                        <h2 class="card-title text-center my-3">Data</h2>
-                        <table class="table table-bordered table-striped mt-5">
+                        <h2 class="card-title text-center mt-3 mb-5">Data</h2>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session()->get('success') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
+                        </div>
+                        <table class="table table-bordered table-striped">
                             <tr>
                                 <td class="table-primary col-3">Nama Depan</td>
                                 <td>{{ $data->FNameInput }}</td>
@@ -40,7 +45,7 @@
                             </tr>
                             <tr>
                                 <td class="table-primary col-3">Foto KTM</td>
-                                <td><img class="img-fluid" src="{{ asset('storage/'.$data->Photo) }}"></td>
+                                <td><img class="img-fluid" src="{{ asset('storage/' . $data->Photo) }}"></td>
                             </tr>
                         </table>
                         <a href="/formulir" class="btn btn-primary mt-3">Back</a>

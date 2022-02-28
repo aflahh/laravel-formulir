@@ -34,7 +34,8 @@ class FormulirController extends Controller
         ], $messagesError);
 
         $request->Photo = $request->PhotoInput->store('images', 'public');
-
+        session()->flash('success', 'Data Berhasil Di Input');
+        
         return view('submit', ['data' => $request]);
     }
 }
