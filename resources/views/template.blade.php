@@ -30,10 +30,10 @@
                         <a class="nav-link" href="/article">Article</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ (strpos(Route::currentRouteName(), 'authors') == 0) ? 'active' : '' }}" href="/authors">Authors</a>
+                        <a class="nav-link" href="/authors">Authors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ (strpos(Route::currentRouteName(), 'categories') == 0) ? 'active' : '' }}" href="/categories">Categories</a>
+                        <a class="nav-link" href="/categories">Categories</a>
                     </li>
                 </ul>
             </div>
