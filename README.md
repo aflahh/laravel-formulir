@@ -1,6 +1,6 @@
 # laravel-formulir
 
-### PBKK A
+### PBKK B
 ### Assignment - Formulir di Laravel
 ### Assignment - Database Related Task
 
